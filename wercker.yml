@@ -25,3 +25,9 @@ build:
         code: |
           mvn clean install -DskipTests
           mvn test
+deploy:
+  steps:
+    - script:
+        name: Deploy testing
+        code: |
+          echo "Deploy to testing"
