@@ -23,5 +23,6 @@ build:
     - script:
         name: Run unit tests
         code: |
+          echo $HELLO
           mvn clean install -DskipTests
           mvn test
