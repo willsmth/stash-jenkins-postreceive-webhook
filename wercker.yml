@@ -25,3 +25,4 @@ build:
         code: |
           mvn clean install -DskipTests
           mvn test
+
