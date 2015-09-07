@@ -97,7 +97,7 @@ public class PostReceiveHookTest {
   public void shouldAddErrorWhenCloneUrlNull() throws Exception {
     when(settings.getString(Notifier.CLONE_URL)).thenReturn(null);
     hook.validate(settings, errors, repo);
-    verify(errors).addFieldError(eq(Notifier.CLONE_URL), "asdf"));
+    verify(errors).addFieldError(eq(Notifier.CLONE_URL), "asdf");
   }
 
   /**
